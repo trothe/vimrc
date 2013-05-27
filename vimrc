@@ -11,3 +11,4 @@ set softtabstop=2
 colorscheme xoria256
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
